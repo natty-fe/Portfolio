@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" data-theme="terminal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Natan Feyisa — Backend &amp; Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Natan Feyisa — Computer Science student building full-stack apps: REST APIs, auth, databases, and RAG pipelines.">
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('nf-theme');
+    if(t){ document.documentElement.setAttribute('data-theme', t); }
+  }catch(e){}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+<div class="cursor-spotlight" id="cursorSpotlight" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">NF</span>
+      <span class="brand-text">Natan<span class="dim">.dev</span></span>
+    </a>
+
+    <div class="theme-toggle" role="group" aria-label="Choose color theme" id="themeToggle">
+      <button class="theme-swatch theme-swatch-terminal" data-theme-choice="terminal" aria-label="Terminal theme" aria-pressed="true"></button>
+      <button class="theme-swatch theme-swatch-mono" data-theme-choice="mono" aria-label="Mono theme" aria-pressed="false"></button>
+      <button class="theme-swatch theme-swatch-nightshift" data-theme-choice="nightshift" aria-label="Nightshift theme" aria-pressed="false"></button>
+      <button class="theme-swatch theme-swatch-paper" data-theme-choice="paper" aria-label="Paper theme" aria-pressed="false"></button>
+      <span class="theme-toggle-divider" aria-hidden="true"></span>
+      <button class="theme-auto-btn" id="themeAuto" type="button" aria-pressed="false" aria-label="Toggle automatic theme cycling" title="Auto-cycle themes">
+        <span class="dot" aria-hidden="true"></span><span>auto</span>
+      </button>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>about</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#contact" data-nav>contact</a>
+      <a class="nav-cta" href="images/Natan-Feyisa-CV.pdf" target="_blank" rel="noopener">résumé ↗</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">[ backend_&amp;_fullstack_dev.exe — addis ababa, ethiopia ]</p>
+        <h1 class="cipher-name" id="cipherName" data-real="Natan Feyisa">Natan Feyisa</h1>
+        <p class="hero-role">Third-year CS student building production-style full-stack apps outside the classroom.</p>
+        <p class="hero-lead">I design REST APIs, wire up authentication, and build the databases behind them — then follow the work through to a responsive front end. Recent builds include a bilingual marketplace platform, a role-based academic advising system, and a RAG-based study assistant. Alongside that, I keep my data structures &amp; algorithms sharp through regular problem-solving practice.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="images/Natan-Feyisa-CV.pdf" target="_blank" rel="noopener">
+            <span>Download résumé</span>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/natty-fe" target="_blank" rel="noopener">
+            <span>View GitHub</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div><span class="num">07</span><span class="label">projects shipped</span></div>
+          <div><span class="num">05</span><span class="label">user roles built into GULIT</span></div>
+          <div><span class="num">3.54</span><span class="label">GPA, expected grad. 2027</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="ring-wrap">
+          <div class="flipcard" id="flipcard" tabindex="0" role="button" aria-pressed="false" aria-label="Flip between photo and avatar">
+            <div class="flipcard-inner">
+              <div class="flip-face flip-front">
+                <img src="images/profile-photo.jpg" alt="Photo of Natan Feyisa" loading="eager">
+              </div>
+              <div class="flip-face flip-back">
+                <img src="images/avatar-photo.png" alt="Illustrated avatar of Natan" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-eyebrow">[ 01 — about ]</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Third-year student, shipping outside of class.</h2>
+        <p>I'm working toward a Bachelor of Science in Computer Science at the American College of Technology, expecting to graduate in 2027. Outside of coursework, I build full applications end to end — REST APIs with proper auth and role permissions, the databases behind them, and the interfaces people actually touch.</p>
+        <p>Most of what I build starts from a real, specific problem: a traditional market that still runs on paper, an advisor who can't track every student's prerequisites, a study process that could use a second brain. I'd rather ship something narrow and working than something broad and half-finished.</p>
+
+        <div class="fact-list">
+          <div class="fact"><span class="fact-k">Education</span><span class="fact-v">B.Sc. Computer Science — American College of Technology <em>(expected 2027, GPA 3.54)</em></span></div>
+          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">Backend &amp; full-stack development, REST APIs, applied databases</span></div>
+          <div class="fact"><span class="fact-k">Based in</span><span class="fact-v">Addis Ababa, Ethiopia</span></div>
+        </div>
+      </div>
+
+      <div class="cert-stack">
+        <div class="cert-card">
+          <h3>Networking Basics</h3>
+          <p>Cisco Networking Academy — completed June 2025.</p>
+          <a href="images/certificate.jpg" target="_blank" rel="noopener" class="text-link">View certificate ↗</a>
+        </div>
+        <div class="cert-card">
+          <h3>CS50x: Intro to Computer Science</h3>
+          <p>HarvardX / edX — course completed, verified certificate pending.</p>
+          <span class="cert-pending">pending ⏳</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <p class="section-eyebrow">[ 02 — stack ]</p>
+    <h2>What I build with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 class="skill-group-title">Languages</h3>
+        <div class="chip-row">
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Java</span>
+          <span class="chip">C++</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Backend &amp; APIs</h3>
+        <div class="chip-row">
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">REST API design</span>
+          <span class="chip">JWT auth</span>
+          <span class="chip">bcrypt</span>
+          <span class="chip">express-validator</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Databases</h3>
+        <div class="chip-row">
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Supabase</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Tools</h3>
+        <div class="chip-row">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">GitHub Pages</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Practice</h3>
+        <div class="chip-row">
+          <a class="chip chip-link" href="https://leetcode.com/u/natty_f/" target="_blank" rel="noopener">LeetCode profile ↗</a>
+          <a class="chip chip-link" href="https://github.com/natty-fe/DSA" target="_blank" rel="noopener">DSA practice repo ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section-eyebrow">[ 03 — projects ]</p>
+    <h2>Things I've built</h2>
+
+    <div class="projects-grid">
+      <article class="project-card project-card-featured">
+        <div class="project-top">
+          <span class="project-index">01</span>
+          <div class="project-tags"><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag tag-live">Live</span></div>
+        </div>
+        <h3>GULIT — Bilingual Market Price Management</h3>
+        <p>Digitizes a paper-based traditional market: regulated pricing, approved-shop listings, order tracking, and delivery workflows. A Node.js/Express REST API in clean MVC structure supports five distinct user roles with role-based authorization. JWT auth, bcrypt hashing, and transactional email (welcome messages, token-based password reset) via Resend, on PostgreSQL/Supabase.</p>
+        <div class="link-row">
+          <a href="https://natty-fe.github.io/Gulit.github.io" target="_blank" rel="noopener" class="text-link">View live ↗</a>
+          <a href="https://github.com/natty-fe/Gulit.github.io" target="_blank" rel="noopener" class="text-link">Source ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-index">02</span>
+          <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Recommendation engine</span></div>
+        </div>
+        <h3>Student Academic Advisor System</h3>
+        <p>A browser-based advising tool that tracks completed and planned courses, estimates current and expected GPA, and checks prerequisite readiness. Includes a course recommendation engine with three modes — best fit, easiest, fastest degree progress — graduation-eligibility prediction, and a local, context-aware chat assistant that answers questions about the student's own record.</p>
+        <a href="https://github.com/natty-fe/Student_service.github.io" target="_blank" rel="noopener" class="text-link">View on GitHub ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-index">03</span>
+          <div class="project-tags"><span class="tag">FastAPI</span><span class="tag">RAG</span><span class="tag tag-progress">In progress</span></div>
+        </div>
+        <h3>AI Study Assistant</h3>
+        <p>A RAG-based study assistant: FastAPI backend with JWT auth, PostgreSQL, and S3-compatible storage (MinIO) for uploaded PDF, PPTX, and DOCX files. An async pipeline (Celery + Redis) handles document parsing, semantic chunking, OpenAI embeddings, and hybrid retrieval (Pinecone + BM25 with Reciprocal Rank Fusion). GPT-4o powers chat, summaries, quiz generation, and flashcard export — Next.js/TypeScript frontend in progress.</p>
+        <a href="https://github.com/natty-fe/AI-study-assistance" target="_blank" rel="noopener" class="text-link">View on GitHub ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-index">04</span>
+          <div class="project-tags"><span class="tag">Full-stack</span><span class="tag tag-progress">In progress</span></div>
+        </div>
+        <h3>Bazar — E-Commerce Marketplace</h3>
+        <p>A full-stack e-commerce marketplace currently in development, focused on product browsing, cart management, and order flow.</p>
+        <a href="https://github.com/natty-fe" target="_blank" rel="noopener" class="text-link">View on GitHub ↗</a>
+      </article>
+    </div>
+
+    <div class="projects-divider"><span>earlier builds — coursework &amp; freelance</span></div>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-index">05</span>
+          <div class="project-tags"><span class="tag">Java</span><span class="tag">Encryption</span></div>
+        </div>
+        <h3>Cipher Text Converter</h3>
+        <p>A tool that converts plain text into several classic cipher forms — a hands-on study of encryption logic and string handling.</p>
+        <a href="https://github.com/natty-fe" target="_blank" rel="noopener" class="text-link">View on GitHub ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-index">06</span>
+          <div class="project-tags"><span class="tag">C</span><span class="tag">Forensics</span></div>
+        </div>
+        <h3>Image Recovery Program</h3>
+        <p>A CS50x-style forensics tool that recovers deleted JPEG images from raw memory dumps — built while learning low-level file I/O.</p>
+        <a href="https://github.com/natty-fe" target="_blank" rel="noopener" class="text-link">View on GitHub ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-index">07</span>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </div>
+        <h3>Freelance Web Designs</h3>
+        <p>Several responsive websites built for local businesses in Addis Ababa — clean UI, mobile-first layouts, real clients.</p>
+        <a href="https://github.com/natty-fe" target="_blank" rel="noopener" class="text-link">Examples &amp; repos ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <p class="section-eyebrow">[ 04 — contact ]</p>
+    <h2>Let's talk</h2>
+    <p class="contact-lead">Open to internships, backend/full-stack freelance work, and anything that involves a real problem worth solving.</p>
+
+    <div class="contact-grid">
+      <a href="mailto:nathanfeyisa6@gmail.com" class="contact-card">
+        <img src="images/email.png" alt="" aria-hidden="true">
+        <div><span class="contact-k">Email</span><span class="contact-v">nathanfeyisa6@gmail.com</span></div>
+      </a>
+      <a href="tel:+251921990808" class="contact-card">
+        <img src="images/phone.png" alt="" aria-hidden="true">
+        <div><span class="contact-k">Phone</span><span class="contact-v">+251 92 199 0808</span></div>
+      </a>
+      <a href="https://github.com/natty-fe" target="_blank" rel="noopener" class="contact-card">
+        <img src="images/github.png" alt="" aria-hidden="true">
+        <div><span class="contact-k">GitHub</span><span class="contact-v">github.com/natty-fe</span></div>
+      </a>
+      <a href="https://www.linkedin.com/in/nathanfeyisa/" target="_blank" rel="noopener" class="contact-card">
+        <img src="images/linkedin.png" alt="" aria-hidden="true">
+        <div><span class="contact-k">LinkedIn</span><span class="contact-v">linkedin.com/in/nathanfeyisa</span></div>
+      </a>
+      <a href="https://t.me/abiinatt" target="_blank" rel="noopener" class="contact-card">
+        <img src="images/telegram.png" alt="" aria-hidden="true">
+        <div><span class="contact-k">Telegram</span><span class="contact-v">@abiinatt</span></div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Natan Feyisa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

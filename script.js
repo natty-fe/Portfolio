@@ -2,7 +2,7 @@
 // Theme toggle — terminal / mono / nightshift / paper, persisted
 // locally, with a manual "next theme" button and an auto-cycle mode
 // ============================================================
-const THEME_ORDER = ['terminal', 'mono', 'nightshift', 'paper'];
+const THEME_ORDER = ['terminal', 'paper', 'mono', 'nightshift'];
 const themeButtons = document.querySelectorAll('.theme-swatch');
 const themeAutoBtn = document.getElementById('themeAuto');
 const root = document.documentElement;

@@ -1,0 +1,80 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated avatar of Nathan">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#1B1F27"/>
+      <stop offset="100%" stop-color="#0A0C10"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A2F3A"/>
+      <stop offset="100%" stop-color="#171B22"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8A33D"/>
+      <stop offset="100%" stop-color="#c98420"/>
+    </linearGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4FD1A5"/>
+      <stop offset="100%" stop-color="#2fae86"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+
+  <!-- circuit dot pattern background -->
+  <g opacity="0.18" stroke="#4FD1A5" stroke-width="1.5">
+    <circle cx="40" cy="60" r="2.5" fill="#4FD1A5"/>
+    <line x1="40" y1="60" x2="40" y2="110"/>
+    <line x1="40" y1="110" x2="80" y2="110"/>
+    <circle cx="80" cy="110" r="2.5" fill="#4FD1A5"/>
+
+    <circle cx="360" cy="80" r="2.5" fill="#E8A33D"/>
+    <line x1="360" y1="80" x2="360" y2="40"/>
+    <line x1="360" y1="40" x2="320" y2="40"/>
+    <circle cx="320" cy="40" r="2.5" fill="#E8A33D"/>
+
+    <circle cx="352" cy="330" r="2.5" fill="#4FD1A5"/>
+    <line x1="352" y1="330" x2="352" y2="370"/>
+    <line x1="352" y1="370" x2="310" y2="370"/>
+    <circle cx="310" cy="370" r="2.5" fill="#4FD1A5"/>
+
+    <circle cx="34" cy="340" r="2.5" fill="#E8A33D"/>
+    <line x1="34" y1="340" x2="34" y2="300"/>
+  </g>
+
+  <!-- shoulders / body -->
+  <path d="M90 400 C90 320 140 280 200 280 C260 280 310 320 310 400 Z" fill="#20242c"/>
+  <path d="M90 400 C90 320 140 280 200 280 C260 280 310 320 310 400 Z" fill="none" stroke="url(#mintGrad)" stroke-width="3" opacity="0.5"/>
+
+  <!-- neck -->
+  <rect x="175" y="230" width="50" height="55" rx="14" fill="url(#faceGrad)"/>
+
+  <!-- head -->
+  <ellipse cx="200" cy="175" rx="88" ry="95" fill="url(#faceGrad)"/>
+
+  <!-- hair block, low-poly style -->
+  <path d="M112 150 C108 90 150 55 200 55 C252 55 292 92 288 152 C275 130 255 118 255 118 L250 148 C230 120 210 112 200 112 C188 112 168 122 150 148 L146 118 C146 118 126 128 112 150 Z" fill="url(#hairGrad)"/>
+
+  <!-- ears -->
+  <ellipse cx="110" cy="180" rx="10" ry="16" fill="url(#faceGrad)"/>
+  <ellipse cx="290" cy="180" rx="10" ry="16" fill="url(#faceGrad)"/>
+
+  <!-- glasses (geometric, tech signature) -->
+  <g stroke="#0A0C10" stroke-width="6" fill="none">
+    <rect x="140" y="168" width="56" height="40" rx="8" fill="#0d1014" fill-opacity="0.55"/>
+    <rect x="204" y="168" width="56" height="40" rx="8" fill="#0d1014" fill-opacity="0.55"/>
+    <line x1="196" y1="185" x2="204" y2="185"/>
+    <line x1="140" y1="180" x2="118" y2="176"/>
+    <line x1="260" y1="180" x2="282" y2="176"/>
+  </g>
+  <rect x="140" y="168" width="56" height="40" rx="8" fill="none" stroke="#4FD1A5" stroke-width="3"/>
+  <rect x="204" y="168" width="56" height="40" rx="8" fill="none" stroke="#4FD1A5" stroke-width="3"/>
+
+  <!-- smile -->
+  <path d="M172 228 Q200 246 228 228" stroke="#E8A33D" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- code-bracket badge on chest, ties to dev identity -->
+  <g transform="translate(200,340)" fill="#0A0C10">
+    <circle r="26" fill="#12161c" stroke="url(#mintGrad)" stroke-width="2.5"/>
+    <text x="0" y="8" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" font-weight="700" text-anchor="middle" fill="#4FD1A5">&lt;/&gt;</text>
+  </g>
+</svg>
